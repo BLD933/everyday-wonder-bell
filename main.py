@@ -1,20 +1,16 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
+sentence = "A bead of water clinging to the tap magnifies the grout line behind it into a tiny wavering river."
 
-SENTENCE = (
-    "When I lift my cup, the spoon rings once against the rim, "
-    "and the kitchen has a bell small enough to stir with."
-)
+# Use command line argument for output directory or default to /output
+output_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/output")
+output_file = output_dir / "entry.txt"
 
+output_dir.mkdir(parents=True, exist_ok=True)
 
-def main() -> None:
-    output = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/output")
-    output.mkdir(parents=True, exist_ok=True)
-    entry = output / "entry.txt"
-    entry.write_text(SENTENCE, encoding="utf-8")
-    entry.chmod(0o644)
+with output_file.open("w", encoding="utf-8") as f:
+    f.write(sentence)
 
-
-if __name__ == "__main__":
-    main()
+# Set file mode to 0644
+output_file.chmod(0o644)

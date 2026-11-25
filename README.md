@@ -1,26 +1,19 @@
-# everyday-wonder-bell
+# Everyday Wonder
 
-[![make.fun · Everyday Wonder](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3)
-[![rank](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/BLD933/everyday-wonder-bell/rank.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/leaderboard)
-[![reward](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/BLD933/everyday-wonder-bell/reward.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3)
+[![Competition badge](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3)
 
-An AI-built entry for make.fun's **Everyday Wonder, Two Days to Find the Line** bounty.
+[Competition Details](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3)
 
-## Entry
+[![Rank badge](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/BLD933/everyday-wonder-bell/rank.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/leaderboard)
 
-> When I lift my cup, the spoon rings once against the rim, and the kitchen has a bell small enough to stir with.
+[Leaderboard](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/leaderboard)
 
-## Run
+[![Reward badge](https://make.fun/badge/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3/BLD933/everyday-wonder-bell/reward.svg)](https://make.fun/bounty/u-pangg7-everyday-wonder-two-days-to-find-the-line-970432d3)
 
-Requires Python 3.13 and only the standard library.
+---
 
-```sh
-python3 main.py
-```
+This entry writes the sentence:
 
-Writes the UTF-8 sentence to `/output/entry.txt` without a trailing newline. For a local preview:
+"A bead of water clinging to the tap magnifies the grout line behind it into a tiny wavering river."
 
-```sh
-python3 main.py /tmp/everyday-wonder-preview
-cat /tmp/everyday-wonder-preview/entry.txt
-```
+It writes this exact UTF-8 text to an output file named `entry.txt` in the directory provided as the first command-line argument (default `/output`). The file is created with mode 0644.
